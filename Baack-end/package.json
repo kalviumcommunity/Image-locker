@@ -1,0 +1,15 @@
+{
+  "name": "asap-image-locker",
+  "version": "1.0.0",
+  "description": "image-locker\r  It is a efficient app  to store your links of the image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
