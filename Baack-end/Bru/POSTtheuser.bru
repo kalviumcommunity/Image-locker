@@ -1,0 +1,23 @@
+meta {
+  name: POSTtheuser
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/adduser
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":"1",
+    "name":"venkat",
+    "lastname":"raman",
+    "email":"venkat@gamil.com",
+    "imageLinks":"https://th.bing.com/th/id/OIP.SFsrv4ryj9XD0c-xsQHwAgHaLF?rs=1&pid=ImgDetMain",
+    "Title":"dhoni",
+    "CreatedBy":"sudhan"
+  }
+}
