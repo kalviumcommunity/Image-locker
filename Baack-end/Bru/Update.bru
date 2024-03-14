@@ -1,0 +1,24 @@
+meta {
+  name: Update
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:3000/updateuser/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id":"1",
+    "name":"venkat",
+    "lastname":"raman",
+    "email":"venkat@gamil.com",
+    "imageLinks":"https://th.bing.com/th/id/OIP.SFsrv4ryj9XD0c-xsQHwAgHaLF?rs=1&pid=ImgDetMain",
+    "Title":"virat",
+    "CreatedBy":"sudhan"
+    
+  }
+}
