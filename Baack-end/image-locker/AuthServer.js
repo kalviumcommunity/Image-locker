@@ -3,7 +3,7 @@ require('dotenv').config
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const signup =express.Router();
-const userModel = require('../Model/User.modal')
+const userModel = require('../Model/Use.Modal')
 const login = express.Router();
 signup.post('/signup',async (req, res) => {
     try{
