@@ -1,7 +1,7 @@
 var express = require("express");
 require("dotenv").config();
 var mongoose = require("mongoose");
-const { connectdb, isConnected } = require('./dbcon.js');
+const  {startDatabase,isConnected} = require('./dbcon.js');
 const { signup, login } = require('./image-locker/AuthServer.js');
 const bodyParser = require('body-parser')
 const cors = require('cors');
@@ -32,7 +32,7 @@ app.use('/', deleteRouter);
 app.use('/', putRouter);
 
 app.listen(3000, async () => {
-    await connectdb();
+    await startDatabase();
     console.log("Server is running on port 3000");
 });
 
