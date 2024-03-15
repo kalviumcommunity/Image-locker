@@ -8,7 +8,7 @@ const getRouter = express.Router();
 const postRouter = express.Router();
 const putRouter = express.Router();
 const deleteRouter = express.Router();
-const UserDetails = require("../Model/userDetails.model");
+const UserDetails = require("../Model/UserdataModel");
 const authenticateToken = (req, res,next) => {
     const authHeader = req.headers['authorization'];
     const token = authHeader && authHeader.split(' ')[1]
