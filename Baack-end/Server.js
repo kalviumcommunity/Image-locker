@@ -1,12 +1,12 @@
 var express = require("express");
 require("dotenv").config();
 var mongoose = require("mongoose");
-const { connectdb, isConnected } = require('./dbcom.js');
-const { signup, login } = require('../Backend/gmeet/AuthServer.js');
+const { connectdb, isConnected } = require('./dbcon.js');
+const { signup, login } = require('./image-locker/AuthServer.js');
 const bodyParser = require('body-parser')
 const cors = require('cors');
 
-const { getRouter, postRouter, deleteRouter, putRouter } = require('./gmeet/gmeet.route.js')
+const { getRouter, postRouter, deleteRouter, putRouter } = require('./image-locker/Image-routes.js')
 var app = express();
 app.use(bodyParser.json())
 app.use(cors())
