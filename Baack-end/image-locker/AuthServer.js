@@ -17,6 +17,7 @@ signup.post('/signup',async (req, res) => {
         res.status(201).json({message:"Signup successful",accessToken: accessToken});
     }catch(err){
         res.status(500).json(err);
+        console.log(err)
     }
 });
 login.post('/login',async (req, res) => {
