@@ -1,10 +1,10 @@
 
-import DoorList from '../backfront/Connection'
+import DoorList from '../front-end/Connection'
 import { BrowserRouter, Routes, Route, UNSAFE_DataRouterContext } from 'react-router-dom';
 import Add from './Add';
 import Update from './Update';
-import Signup from '../Login';
-import Signupp from '../Signup';
+import Signup from './Login';
+import Signupp from './Signup';
 import Logout from './logout';
 
 

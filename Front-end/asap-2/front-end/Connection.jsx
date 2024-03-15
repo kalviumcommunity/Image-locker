@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import WelcomeUser from "../Component/Welcome";
+import WelcomeUser from "../Components/Welcome";
 
 function DoorList() {
   const [data, setData] = useState([]);
