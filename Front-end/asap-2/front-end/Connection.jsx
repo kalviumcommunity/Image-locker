@@ -26,7 +26,7 @@ function DoorList() {
   const fetchData = async () => {
     try {
       const token = getCookie('token');
-      const response = await axios.get("https://squad51-googlemeetclone.onrender.com/getallusers", { headers: { authorization: `Bearer ${token}` } });
+      const response = await axios.get("https://squad51-image-locker.onrender.com/getallusers", { headers: { authorization: `Bearer ${token}` } });
       setData(response.data);
     } catch (error) {
       console.error("Fetch error:", error);
@@ -44,7 +44,7 @@ function DoorList() {
 
   const handleDelete = (id) => {
     const token = getCookie('token');
-    axios.delete(`https://squad51-googlemeetclone.onrender.com/deleteuser/${id}`, { headers: { authorization: `Bearer ${token}` } })
+    axios.delete(`https://squad51-image-locker.onrender.com/deleteuser/${id}`, { headers: { authorization: `Bearer ${token}` } })
       .then(res => {
         console.log(res);
         window.location.reload();
@@ -94,7 +94,7 @@ function DoorList() {
                     <td style={{ padding: "8px", textAlign: "center",fontFamily:'monospace',backgroundColor:'limegreen',color:'white' }}>{item.lastname}</td>
                     <td style={{ padding: "8px", textAlign: "center",fontFamily:'monospace',backgroundColor:'limegreen',color:'white' }}>{item.Title}</td>
                     <td style={{ padding: "8px", textAlign: "center",fontFamily:'monospace',backgroundColor:'limegreen',color:'white' }}>{item.CreatedBy}</td>
-                    <td style={{ padding: "8px", textAlign: "center",fontFamily:'monospace',backgroundColor:'limegreen',color:'white' }}><a target="_blank" rel="noopener noreferrer" href={item.imageLink}>{item.Link}</a></td>
+                    <td style={{ padding: "8px", textAlign: "center",fontFamily:'monospace',backgroundColor:'limegreen',color:'white' }}><a target="_blank" rel="noopener noreferrer" href={item.imageLinks}>{item.iamgeLinks}</a></td>
                     <td style={{ padding: "8px", textAlign: "center",fontFamily:'monospace',backgroundColor:'limegreen',color:'white' }}>
                       <Link to={`/update/${item._id}`}><button style={{ marginRight: '5px',background:'pink'}}>Update</button></Link>
                       <button style={{background:'lightblue'}} onClick={(e) => handleDelete(item.id)}>Delete</button>
