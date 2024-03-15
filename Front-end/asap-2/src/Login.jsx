@@ -62,7 +62,7 @@ function Login() {
               backgroundColor: '#f0f0f0',
               padding: '20px',
               borderRadius: '8px',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+              // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
               textAlign: 'center',
               boxShadow: '0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5), 0 0 30px rgba(255, 0, 0, 0.3)'
             }}
